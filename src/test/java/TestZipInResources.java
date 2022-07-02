@@ -32,8 +32,8 @@ public class TestZipInResources {
         CSVReader csvReader = new CSVReader(new InputStreamReader(inputStream));
         list = csvReader.readAll();
         assertThat(list).contains(
-                new String[] {"Username"," Identifier","First name","Last name"},
-                new String[] {"booker12","9012","Rachel","Booker"});
+                new String[] {"Username; Identifier;First name;Last name"},
+                new String[] {"booker12;9012;Rachel;Booker"});
 
                 }
 
